@@ -31,12 +31,3 @@ jobs:
         with:
           name: Windows-EXE
           path: dist/KeyboardController.exe
-
-      - name: Upload Release
-        uses: actions/upload-release-asset@v1
-        with:
-          upload_url: ${{ steps.upload-release-asset-upload-url.outputs.upload_url }}
-          asset_path: dist/KeyboardController.exe
-          asset_name: KeyboardController.exe
-          asset_content_type: application/octet-stream
-          asset_label: Windows-EXE

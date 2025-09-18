@@ -31,7 +31,6 @@ class KeyboardService:
 
 if __name__ == '__main__':
     keyboardService = KeyboardService()
-    time.sleep(2)
 
     if len(sys.argv) > 1:
         inputType = sys.argv[1]
